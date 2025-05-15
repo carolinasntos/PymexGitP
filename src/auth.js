@@ -1,6 +1,6 @@
 // Example of an Express.js route handler for login
 const express = require("express");
-const jwt = require("jsonwebtoken");
+const jwt = "jsonwebtoken";
 const bcrypt = require("bcrypt");
 const db = require("./db"); // Assume this is where your database connection is managed
 
