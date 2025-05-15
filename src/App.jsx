@@ -12,34 +12,34 @@ import ProtectedRoute from "../PrivateRoute"; // Import the ProtectedRoute
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/about" element={<About />} />
+    //<Router>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/about" element={<About />} />
 
-        {/* Protected Routes */}
-        <Route element={<ProtectedRoute allowedRoles={['Admin']} />}>
-          <Route path="/admin" element={<AdminMain />} />
-        </Route>
+      {/* Protected Routes */}
+      <Route element={<ProtectedRoute allowedRoles={['Admin']} />}>
+        <Route path="/admin" element={<AdminMain />} />
+      </Route>
 
-        <Route element={<ProtectedRoute allowedRoles={['Cliente']} />}>
-          <Route path="/client" element={<ClientMain />} />
-        </Route>
+      <Route element={<ProtectedRoute allowedRoles={['Cliente']} />}>
+        <Route path="/client" element={<ClientMain />} />
+      </Route>
 
-        <Route element={<ProtectedRoute allowedRoles={['Sucursal']} />}>
-          <Route path="/sucursal" element={<SucursalMain />} />
-        </Route>
+      <Route element={<ProtectedRoute allowedRoles={['Sucursal']} />}>
+        <Route path="/sucursal" element={<SucursalMain />} />
+      </Route>
 
-        <Route element={<ProtectedRoute allowedRoles={['Proveedor']} />}>
-          <Route path="/dist" element={<DistribuidorMain />} />
-        </Route>
+      <Route element={<ProtectedRoute allowedRoles={['Proveedor']} />}>
+        <Route path="/dist" element={<DistribuidorMain />} />
+      </Route>
 
-        <Route element={<ProtectedRoute allowedRoles={['Vendedor']} />}>
-          <Route path="/vendedor" element={<VendedorMain />} />
-        </Route>
-      </Routes>
-    </Router>
+      <Route element={<ProtectedRoute allowedRoles={['Vendedor']} />}>
+        <Route path="/vendedor" element={<VendedorMain />} />
+      </Route>
+    </Routes>
+    //</Router>
   );
 }
 
