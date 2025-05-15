@@ -27,14 +27,6 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      - name: Linter
-        run: npm run lint
-        continue-on-error: true
-
-      - name: Test
-        run: npm test
-        continue-on-error: true
-
       - name: Build
         run: npm run build
 
@@ -46,3 +38,11 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+
+      - name: Linter
+        run: npm run lint
+        continue-on-error: true
+
+      - name: Test
+        run: npm test
+        continue-on-error: true
