@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "main"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/poppins": "^5.2.5",
