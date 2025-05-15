@@ -70,7 +70,7 @@ const Login = () => {
               </div>
               <br />
               <div className="w-full h-[80px] flex flex-col items-start">
-                <h1>Contraseña</h1>
+                <h1>Contrasena</h1>
                 <input
                   type="password"
                   className="w-full h-3/5 rounded-xl pl-2"
