@@ -21,7 +21,7 @@ export function StepperComp({ pedidoId }) {
       }
 
       // Send the status update to the backend
-      const response = await axios.put(`https://carolinasntos.github.io/PymexGitP/api/pedidos/estatus/${pedidoId}`, {
+      const response = await axios.put(`https://railwayback-production-781f.up.railway.app/api/pedidos/estatus/${pedidoId}`, {
         estatusPedido: status, // Make sure the key here matches the backend's expected key
       });
 

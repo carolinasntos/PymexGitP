@@ -14,7 +14,7 @@ function ClientMain() {
     }
 
     try {
-      const response = await fetch("https://carolinasntos.github.io/PymexGitP/protectedRoute", {
+      const response = await fetch("https://railwayback-production-781f.up.railway.app/protectedRoute", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
