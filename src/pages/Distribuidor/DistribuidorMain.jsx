@@ -19,7 +19,7 @@ function DistribuidorMain() {
   const [pedidos, setPedidos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/pedidos/general")
+    fetch("https://carolinasntos.github.io/PymexGitP/api/pedidos/general")
       .then((res) => res.json())
       .then((data) => setPedidos(data))
       .catch((err) => console.error("Error fetching pedidos:", err));

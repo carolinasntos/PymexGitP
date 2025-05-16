@@ -14,7 +14,7 @@ function ClientMain() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/protectedRoute", {
+      const response = await fetch("https://carolinasntos.github.io/PymexGitP/protectedRoute", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
