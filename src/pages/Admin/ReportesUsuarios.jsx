@@ -6,7 +6,7 @@ function ReportesUsuarios() {
 
     const fetchReportes = async () => {
         try {
-            const response = await fetch("http://localhost:3001/reportes");
+            const response = await fetch("https://railwayback-production-781f.up.railway.app/reportes");
             const data = await response.json();
             setReportes(data);
         } catch (error) {
