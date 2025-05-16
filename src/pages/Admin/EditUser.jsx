@@ -47,7 +47,7 @@ function EditUser({user, onClose}) {
             datos.sucursal = sucursal;
           }
       
-          const res = await axios.put(`http://localhost:3001/api/usuarios/${user.idUsuario}`, datos);
+          const res = await axios.put(`https://railwayback-production-781f.up.railway.app/api/usuarios/${user.idUsuario}`, datos);
           console.log("Usuario actualizado:", res.data);
           onClose(); // cerrar modal si todo sale bien
         } catch (error) {
@@ -72,7 +72,7 @@ function EditUser({user, onClose}) {
             datos.sucursal = sucursal;
           }
       
-          const res = await axios.delete(`http://localhost:3001/api/usuarios/${user.idUsuario}`);
+          const res = await axios.delete(`https://railwayback-production-781f.up.railway.app/api/usuarios/${user.idUsuario}`);
           console.log("Usuario actualizado:", res.data);
           onClose(); // cerrar modal si todo sale bien
         } catch (error) {

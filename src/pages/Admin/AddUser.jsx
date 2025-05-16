@@ -46,7 +46,7 @@ function AddUser({onClose}) {
                 datos.sucursal = sucursal;
             }
         
-            const res = await axios.post(`http://localhost:3001/api/usuarios/admin`, datos);
+            const res = await axios.post(`https://railwayback-production-781f.up.railway.app/api/usuarios/admin`, datos);
             console.log("Usuario creado:", res.data);
             onClose(); // cerrar modal si todo sale bien
         } catch (error) {

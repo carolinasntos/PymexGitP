@@ -12,7 +12,7 @@ function PermisosUsuarios({ addUserModal, setAddUserModal, editUserModal, setEdi
 
     const fetchUsuarios = async () => {
       try {
-        const res = await axios.get("http://localhost:3001/api/usuarios", { signal });
+        const res = await axios.get("https://railwayback-production-781f.up.railway.app/api/usuarios", { signal });
 
         if (res.data && Array.isArray(res.data)) {
           setUsuarios(res.data);
